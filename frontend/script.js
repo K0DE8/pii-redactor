@@ -54,8 +54,10 @@ form.addEventListener('submit', async (e) => {
   formData.append('file', file);
 
   try {
-    const res = await fetch('/redact', { method: 'POST', body: formData });
-
+    const res = await fetch('https://pii-redactor-ebk2.onrender.com/redact', {
+      method: 'POST',
+      body: formData
+    });
     if (!res.ok) {
       const data = await res.json().catch(() => ({}));
       throw new Error(data.error || 'Redaction failed.');

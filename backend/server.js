@@ -4,8 +4,9 @@ const path = require('path');
 const fs = require('fs');
 const crypto = require('crypto');
 const { execFile } = require('child_process');
-
+const cors = require('cors');
 const app = express();
+app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 const UPLOAD_DIR = path.join(__dirname, 'uploads');
