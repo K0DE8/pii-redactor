@@ -54,7 +54,7 @@ form.addEventListener('submit', async (e) => {
   formData.append('file', file);
 
   try {
-    const res = await fetch('https://pii-redactor-ebk2.onrender.com/redact', {
+    const res = await fetch('https://pii-redactor-production-9a0d.up.railway.app/redact', {
       method: 'POST',
       body: formData
     });
