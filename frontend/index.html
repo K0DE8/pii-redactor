@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nayaScript &mdash; DOCX PII Redactor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="card">
+    <h1>DOCX PII Redactor</h1>
+    <p class="subtitle">Upload a .docx file. Names, emails, phone numbers, addresses and other PII are swapped for
+      realistic fake values.</p>
+
+    <form id="upload-form">
+      <label for="file-input" class="dropzone" id="dropzone">
+        <span id="dropzone-text">Click to choose a .docx file, or drag one here</span>
+      </label>
+      <input type="file" id="file-input" name="file" accept=".docx" hidden />
+
+      <button type="submit" id="submit-btn" disabled>Redact document</button>
+    </form>
+
+    <p id="status" class="status"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

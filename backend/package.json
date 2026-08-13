@@ -1,0 +1,13 @@
+{
+  "name": "nayascript-backend",
+  "version": "1.0.0",
+  "description": "Simple backend that uploads a .docx, runs the PII redactor, and returns the redacted file.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

@@ -1,0 +1,12 @@
+python-docx>=1.1.0
+spacy>=3.7.0
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
+# After installing requirements, download the spaCy model once:
+#   python -m spacy download en_core_web_sm
+#
+# Also install the Tesseract OCR binary separately (not a pip package):
+#   Windows: https://github.com/UB-Mannheim/tesseract/wiki
+#   macOS:   brew install tesseract
+#   Linux:   sudo apt-get install tesseract-ocr
